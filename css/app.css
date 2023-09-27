@@ -4,6 +4,10 @@
   --lightblue: #1c71e8;
 }
 
+.text-orange {
+    color: orange;
+}
+
 .mobile-logo {
     width: 50px;
 }
