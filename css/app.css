@@ -5,25 +5,22 @@
 
 }
 
-.row
-
 .app {
     position: relative;
 }
 
 .aside_top {
-    position: fixed;
-    height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .app_content {
     display: flex;
-    padding-top: 50px;
 }
 
 .main_content {
     flex-grow: 1;
-    padding-left: 100px;
     height: 100vh;
 }
 
@@ -32,7 +29,9 @@
 }
 
 .header_left {
-    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
     height: 100vh;
 }
 
@@ -87,7 +86,7 @@
     border: 1px darkmagenta solid;
     /* padding: 20px; */
 }
-.debug .row {
+.debug .row_basic {
     border: 1px darkmagenta solid;
     /* padding: 20px; */
 }
