@@ -1,0 +1,98 @@
+/* COLOR PALETTE */
+
+:root {
+    --lightblue: #1C71E8;
+
+}
+
+.row
+
+.app {
+    position: relative;
+}
+
+.aside_top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 50px;
+}
+
+.app_content {
+    display: flex;
+    padding-top: 50px;
+}
+
+.main_content {
+    flex-grow: 1;
+    padding-left: 100px;
+}
+
+.hero > .row {
+    flex-direction: column;
+}
+
+.header_left {
+    position: fixed;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 576px) { 
+    
+}
+
+
+@media (min-width: 768px) { 
+    
+    .hero > .row {
+        flex-direction: row;
+    }
+ }
+
+
+@media (min-width: 992px) { 
+    
+ }
+
+
+@media (min-width: 1200px) { 
+    
+ }
+
+
+@media (min-width: 1400px) { 
+    
+ }
+
+/* DEBUG */
+
+/* .debug .app {
+    border: 1px aqua solid;
+    padding: 20px;
+} */
+.debug .aside_top {
+    border: 1px blue solid;
+    /* padding: 20px; */
+}
+.debug .app_content {
+    border: 1px darkorange solid;
+    /* padding: 20px; */
+}
+.debug .header_left {
+    border: 1px chartreuse solid;
+    padding: 20px;
+    height: 600px;
+}
+.debug .main_content {
+    border: 1px darkmagenta solid;
+    /* padding: 20px; */
+}
+.debug .row {
+    border: 1px darkmagenta solid;
+    /* padding: 20px; */
+}
+.debug [class^=col] {
+    border: 1px darkred solid;
+    padding: 20px;
+}
