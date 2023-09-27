@@ -26,6 +26,7 @@
 .main_content {
     flex-grow: 1;
     padding-left: 100px;
+    height: 100vh;
 }
 
 .hero > .row {
@@ -34,6 +35,7 @@
 
 .header_left {
     position: fixed;
+    height: 100vh;
 }
 
 /* RESPONSIVE */
@@ -82,7 +84,6 @@
 .debug .header_left {
     border: 1px chartreuse solid;
     padding: 20px;
-    height: 600px;
 }
 .debug .main_content {
     border: 1px darkmagenta solid;
