@@ -1,103 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/app.css">
-</head>
-</head>
-<body class="debug">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+
+  <body class="debug">
     <div class="app overflow-hidden">
-        <aside class="aside_top container-fluid">
-                <div class="row">
-                  <div class="col-2 d-flex justify-content-center">
-                    immagine
-                  </div>
-                  <div class="col flex-grow-1">
-                    search bar
-                  </div>
-                  <div class="col-2 d-flex justify-content-end">
-                    icone
+      <aside class="aside_top container-fluid flex-shrink-0">
+        <div class="row">
+          <div class="col-2 d-flex justify-content-center">
+            <figure class="img-fluid">
+                <img class="mobile-logo" src="./img/mobile-logo.png" alt="">
+            </figure>
+          </div>
+          <div class="col flex-grow-1">search bar</div>
+          <div class="col-2 d-flex justify-content-end">icone</div>
+        </div>
+      </aside>
+      <div class="app_content d-flex">
+        <header class="header_left">header</header>
+        <main class="main_content overflow-auto flex-grow-1">
+          <section class="hero container-fluid">
+            <div class="row flex-column flex-md-row">
+              <div class="col order-md-2">Nuovo Studente</div>
+              <div class="col order-first">Boolean</div>
+              <div class="col">Studenti online negli ultimi 30 minuti</div>
+            </div>
+          </section>
+          <section>
+            <div class="next-classes">
+              <div>
+                <h1>Prossime Classi</h1>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="flex-grow-1">Nome</th>
+                      <th class="d-none d-md-table-cell">Data Inizio</th>
+                      <th class="d-none d-md-table-cell">ROI</th>
+                      <th>Stato</th>
+                      <th>Azioni</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Classe 75</td>
+                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                      <td class="d-none d-md-table-cell">20%</td>
+                      <td>Done</td>
+                      <td>penna cestino</td>
+                    </tr>
+                    <tr>
+                      <td>Classe 75</td>
+                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                      <td class="d-none d-md-table-cell">20%</td>
+                      <td>Done</td>
+                      <td>penna cestino</td>
+                    </tr>
+                    <tr>
+                      <td>Classe 75</td>
+                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                      <td class="d-none d-md-table-cell">20%</td>
+                      <td>Done</td>
+                      <td>penna cestino</td>
+                    </tr>
+                    <tr>
+                      <td>Classe 75</td>
+                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                      <td class="d-none d-md-table-cell">20%</td>
+                      <td>Done</td>
+                      <td>penna cestino</td>
+                    </tr>
+                    <tr>
+                      <td>Classe 75</td>
+                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                      <td class="d-none d-md-table-cell">20%</td>
+                      <td>Done</td>
+                      <td>penna cestino</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <div>
+                <h1>F.A.Q.</h1>
+                <div class="accordion accordion-flush">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Come aggiungere un nuovo studente?
+                      </button>
+                    </h2>
+                    <div
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Clicca sul + in alto nella sezione blu
+                      </div>
+                    </div>
                   </div>
                 </div>
-        </aside>
-        <div class="app_content">
-                <header class="header_left">
-                    header
-                </header>
-            <main class="main_content overflow-auto">
-                <section class="hero container-fluid">
-                    <div class="row">
-                        <div class="col order-md-2">Nuovo Studente</div>
-                        <div class="col order-first">Boolean</div>
-                        <div class="col">Studenti online negli ultimi 30 minuti</div>
-                    </div>
-                </section>
-                <section>
-                    <div class="next-classes">
-                        <div>
-                            <h1>Prossime Classi</h1>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th class="flex-grow-1">Nome</th>
-                                        <th class="d-none d-md-table-cell">Data Inizio</th>
-                                        <th class="d-none d-md-table-cell">ROI</th>
-                                        <th>Stato</th>
-                                        <th>Azioni</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Classe 75</td>
-                                        <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td>Done</td>
-                                        <td>penna cestino</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Classe 75</td>
-                                        <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td>Done</td>
-                                        <td>penna cestino</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Classe 75</td>
-                                        <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td>Done</td>
-                                        <td>penna cestino</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Classe 75</td>
-                                        <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td>Done</td>
-                                        <td>penna cestino</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Classe 75</td>
-                                        <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td>Done</td>
-                                        <td>penna cestino</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+              </div>
+            </div>
 
-                    <div></div>
-                </section>
-            </main>
-        </div>
+            <div>
+              <h1>TO DO</h1>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" />
+                <label class="form-check-label" for="flexCheckDefault">
+                  kickoff nuove classi
+                </label>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
     </div>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
