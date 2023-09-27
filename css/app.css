@@ -6,22 +6,23 @@
 }
 
 .app {
-    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .aside_top {
-    position: sticky;
-    top: 0;
-    left: 0;
+   height: auto;
+   flex-shrink: 0;
 }
 
 .app_content {
     display: flex;
+    height: 100%;
 }
 
 .main_content {
     flex-grow: 1;
-    height: 100vh;
+    height: 100%;
 }
 
 .hero > .row {
@@ -29,10 +30,7 @@
 }
 
 .header_left {
-    position: sticky;
-    top: 0;
-    left: 0;
-    height: 100vh;
+    
 }
 
 /* RESPONSIVE */
