@@ -22,7 +22,8 @@
       <aside class="aside_top container-fluid flex-shrink-0 py-2">
         <div class="row">
           <div class="col-2 d-flex justify-content-center">
-            <img class="mobile-logo" src="./img/mobile-logo.png" alt="" />
+            <img class="mobile-logo d-lg-none" src="./img/mobile-logo.png" alt=""/>
+            <img class="d-none d-lg-inline-block" src="./img/logo.svg" alt="">
           </div>
           <div class="col flex-grow-1 d-flex">
             <form class="d-flex flex-grow-1 input-group" role="search">
@@ -38,12 +39,12 @@
               />
             </form>
           </div>
-          <div class="col-2 d-flex justify-content-end align-items-center">
-            <i class="fa-solid fa-list-ul d-none d-lg-inline-block px-2"></i>
-            <i
+          <div class="col-2 d-flex justify-content-end align-items-center ">
+            <a class="nav-link text-secondary" href="#"><i class="fa-solid fa-list-ul d-none d-lg-inline-block px-2"></i></a>
+            <a class="nav-link text-secondary" href="#"><i
               class="fa-solid fa-circle-question d-none d-lg-inline-block px-2"
-            ></i>
-            <i class="fa-solid fa-burger d-none d-lg-inline-block px-2"></i>
+            ></i></a>
+            <a class="nav-link text-secondary" href="#"><i class="fa-solid fa-burger d-none d-lg-inline-block px-2"></i></a>
             <div class="dropdown d-flex">
               <a
                 class="btn"
