@@ -121,6 +121,31 @@
                   />
                 </div>
               </div>
+              <div class="col-12">
+                <p>Foto</p>
+                <div class="input-group">
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="inputGroupFile04"
+                    aria-describedby="inputGroupFileAddon04"
+                    aria-label="Upload"
+                  />
+                </div>
+              </div>
+
+              <p class="p-4">
+                <input type="checkbox" /> Seleziona per proseguire
+              </p>
+
+              <div>
+                <span>
+                  <button type="button" class="btn btn-primary">Salva</button>
+                </span>
+                <span>
+                  <button type="button" class="btn btn-warning">Svuota</button>
+                </span>
+              </div>
             </div>
           </form>
         </div>
@@ -186,26 +211,26 @@
       </aside>
       <div class="app_content overflow-hidden d-flex">
         <header
-          class="header_left d-flex flex-column justify-content-between p-4"
+          class="header_left d-flex flex-column justify-content-between p-4 text-small"
         >
           <div class="d-flex flex-column text-white">
-            <a class="nav-link pb-2" href="#"
+            <a class="nav-link pb-2 d-flex" href="#"
               ><i class="fa-solid fa-house"></i>
-              <span class="d-none d-lg-inline-block">Home</span></a
+              <span class="d-none d-lg-inline-block ps-2">Home</span></a
             >
-            <a class="nav-link pb-2" href="#"
+            <a class="nav-link pb-2 d-flex" href="#"
               ><i class="fa-solid fa-chart-simple"></i
-              ><span class="d-none d-lg-inline-block ps-2">Stats</span></a
+              ><span class="d-none d-lg-inline-block ps-3">Stats</span></a
             >
-            <a class="nav-link" href="#"
+            <a class="nav-link d-flex" href="#"
               ><i class="fa-solid fa-signal"></i>
-              <span class="d-none d-lg-inline-block">Signals</span></a
+              <span class="d-none d-lg-inline-block ps-2">Signals</span></a
             >
           </div>
           <div class="text-white">
-            <a class="nav-link" href="#"
+            <a class="nav-link d-flex" href="#"
               ><i class="fa-solid fa-gear"></i>
-              <span class="d-none d-lg-inline-block">Settings</span></a
+              <span class="d-none d-lg-inline-block ps-2">Settings</span></a
             >
           </div>
         </header>
@@ -251,7 +276,7 @@
                 </ul>
               </div>
               <div class="col p-4">
-                <p>Studenti online negli ultimi 30 minuti</p>
+                <span>Studenti online negli ultimi 30 minuti</span>
                 <p class="fs-2">125</p>
               </div>
             </div>
@@ -261,15 +286,19 @@
               <section class="p-3">
                 <div class="next-classes">
                   <div class="card">
-                    <h1 class="border p-2 bg-lightgray">Prossime Classi</h1>
-                    <table class="table bg-light">
+                    <h4 class="border p-2 bg-lightgray">Prossime Classi</h4>
+                    <table class="table bg-light text-small">
                       <thead>
                         <tr>
                           <th class="w-50">Nome</th>
-                          <th class="d-none d-md-table-cell">Data Inizio</th>
-                          <th class="d-none d-md-table-cell">ROI</th>
-                          <th>Stato</th>
-                          <th>Azioni</th>
+                          <th class="d-none d-md-table-cell text-center">
+                            Data Inizio
+                          </th>
+                          <th class="d-none d-md-table-cell text-center">
+                            ROI
+                          </th>
+                          <th class="text-center">Stato</th>
+                          <th class="text-center">Azioni</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -280,12 +309,37 @@
                             </figure>
                             <span>Classe 75</span>
                           </td>
-                          <td class="d-none d-md-table-cell">
+                          <td class="d-none d-md-table-cell text-center">
                             15 Febbraio 2021
                           </td>
-                          <td class="d-none d-md-table-cell">20%</td>
-                          <td>Done</td>
-                          <td>penna cestino</td>
+                          <td class="d-none d-md-table-cell text-center">
+                            20%
+                          </td>
+                          <td class="text-center">
+                            <span class="rounded bg-success p-1 text-white">
+                              Done
+                            </span>
+                          </td>
+                          <td>
+                            <div class="text-center">
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-pencil"></i>
+                                </button>
+                              </span>
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -294,12 +348,37 @@
                             </figure>
                             <span>Classe 75</span>
                           </td>
-                          <td class="d-none d-md-table-cell">
+                          <td class="d-none d-md-table-cell text-center">
                             15 Febbraio 2021
                           </td>
-                          <td class="d-none d-md-table-cell">20%</td>
-                          <td>Done</td>
-                          <td>penna cestino</td>
+                          <td class="d-none d-md-table-cell text-center">
+                            20%
+                          </td>
+                          <td class="text-center">
+                            <span class="rounded bg-success p-1 text-white">
+                              Done
+                            </span>
+                          </td>
+                          <td>
+                            <div class="text-center">
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-pencil"></i>
+                                </button>
+                              </span>
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -308,12 +387,37 @@
                             </figure>
                             <span>Classe 75</span>
                           </td>
-                          <td class="d-none d-md-table-cell">
+                          <td class="d-none d-md-table-cell text-center">
                             15 Febbraio 2021
                           </td>
-                          <td class="d-none d-md-table-cell">20%</td>
-                          <td>Done</td>
-                          <td>penna cestino</td>
+                          <td class="d-none d-md-table-cell text-center">
+                            20%
+                          </td>
+                          <td class="text-center">
+                            <span class="rounded bg-warning p-1 text-white">
+                              Process
+                            </span>
+                          </td>
+                          <td>
+                            <div class="text-center">
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-pencil"></i>
+                                </button>
+                              </span>
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -322,12 +426,37 @@
                             </figure>
                             <span>Classe 75</span>
                           </td>
-                          <td class="d-none d-md-table-cell">
+                          <td class="d-none d-md-table-cell text-center">
                             15 Febbraio 2021
                           </td>
-                          <td class="d-none d-md-table-cell">20%</td>
-                          <td>Done</td>
-                          <td>penna cestino</td>
+                          <td class="d-none d-md-table-cell text-center">
+                            20%
+                          </td>
+                          <td class="text-center">
+                            <span class="rounded bg-success p-1 text-white">
+                              Done
+                            </span>
+                          </td>
+                          <td>
+                            <div class="text-center">
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-pencil"></i>
+                                </button>
+                              </span>
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -336,12 +465,154 @@
                             </figure>
                             <span>Classe 75</span>
                           </td>
-                          <td class="d-none d-md-table-cell">
+                          <td class="d-none d-md-table-cell text-center">
                             15 Febbraio 2021
                           </td>
-                          <td class="d-none d-md-table-cell">20%</td>
-                          <td>Done</td>
-                          <td>penna cestino</td>
+                          <td class="d-none d-md-table-cell text-center">
+                            20%
+                          </td>
+                          <td class="text-center">
+                            <span class="rounded bg-danger p-1 text-white">
+                              Failed
+                            </span>
+                          </td>
+                          <td>
+                            <div class="text-center">
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-pencil"></i>
+                                </button>
+                              </span>
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <figure class="d-inline">
+                              <img src="./img/class-avatar.jpg" alt="" />
+                            </figure>
+                            <span>Classe 75</span>
+                          </td>
+                          <td class="d-none d-md-table-cell text-center">
+                            15 Febbraio 2021
+                          </td>
+                          <td class="d-none d-md-table-cell text-center">
+                            20%
+                          </td>
+                          <td class="text-center">
+                            <span class="rounded bg-success p-1 text-white">
+                              Done
+                            </span>
+                          </td>
+                          <td>
+                            <div class="text-center">
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-pencil"></i>
+                                </button>
+                              </span>
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <figure class="d-inline">
+                              <img src="./img/class-avatar.jpg" alt="" />
+                            </figure>
+                            <span>Classe 75</span>
+                          </td>
+                          <td class="d-none d-md-table-cell text-center">
+                            15 Febbraio 2021
+                          </td>
+                          <td class="d-none d-md-table-cell text-center">
+                            20%
+                          </td>
+                          <td class="text-center">
+                            <span class="rounded bg-danger p-1 text-white">
+                              Failed
+                            </span>
+                          </td>
+                          <td>
+                            <div class="text-center">
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-pencil"></i>
+                                </button>
+                              </span>
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <figure class="d-inline">
+                              <img src="./img/class-avatar.jpg" alt="" />
+                            </figure>
+                            <span>Classe 75</span>
+                          </td>
+                          <td class="d-none d-md-table-cell text-center">
+                            15 Febbraio 2021
+                          </td>
+                          <td class="d-none d-md-table-cell text-center">
+                            20%
+                          </td>
+                          <td class="text-center">
+                            <span class="rounded bg-success p-1 text-white">
+                              Done
+                            </span>
+                          </td>
+                          <td>
+                            <div class="text-center">
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-pencil"></i>
+                                </button>
+                              </span>
+                              <span>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary"
+                                >
+                                  <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -464,7 +735,7 @@
                 </div>
               </section>
               <section class="p-3">
-                <div class="card" style="width: 30rem">
+                <div class="card">
                   <img src="./img/stats.jpeg" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <table class="table">
@@ -473,8 +744,8 @@
                           <th>
                             <h5 class="card-title">Utenti attivi</h5>
                             <p class="card-text">
-                              Lista degli utenti attivi in piattaforma nell'ultimo
-                              mese
+                              Lista degli utenti attivi in piattaforma
+                              nell'ultimo mese
                             </p>
                           </th>
                         </tr>
