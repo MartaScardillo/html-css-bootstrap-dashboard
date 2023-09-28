@@ -57,12 +57,9 @@ figure {
   font-size: 12px;
 }
 
-/* .table img {
-  width: 360px;
+.btn-hover:hover {
+  background-color: gray;
 }
-.table figure {
-  width: 100%;
-} */
 
 .next-classes img {
   display: inline;
