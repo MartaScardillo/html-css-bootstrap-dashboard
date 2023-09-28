@@ -23,6 +23,10 @@
   background-color: var(--lightgray);
 }
 
+figure {
+  width: 100%;
+}
+
 .mobile-logo {
     width: 50px;
 }
@@ -53,6 +57,22 @@
   font-size: 12px;
 }
 
+/* .table img {
+  width: 360px;
+}
+.table figure {
+  width: 100%;
+} */
+
+.next-classes img {
+  display: inline;
+  width: 20px;
+}
+
+
+.offcanvas {
+  --bs-offcanvas-width: 100%;
+}
 
 /* RESPONSIVE */
 
@@ -63,6 +83,9 @@
 }
 
 @media (min-width: 992px) {
+  .offcanvas {
+    --bs-offcanvas-width: 700px;
+  }
 }
 
 @media (min-width: 1200px) {

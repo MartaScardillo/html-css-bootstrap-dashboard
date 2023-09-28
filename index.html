@@ -26,7 +26,9 @@
       aria-labelledby="offcanvasWithBothOptionsLabel"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          Inserisci nuovo studente
+        </h5>
         <button
           type="button"
           class="btn-close"
@@ -35,7 +37,93 @@
         ></button>
       </div>
       <div class="offcanvas-body">
-        <p></p>
+        <div>
+          <form action="">
+            <div class="row">
+              <div class="col-6">
+                <p>Nome</p>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Username"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Cognome</p>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Username"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Email</p>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Password</p>
+                <div class="input-group mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    aria-label="Username"
+                  />
+                </div>
+              </div>
+              <div>
+                <p>Indirizzo</p>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Username"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Città</p>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Username"
+                  />
+                </div>
+              </div>
+              <div class="col-4">
+                <p>Stato</p>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Scegli...</option>
+                  <option value="1">Italia</option>
+                  <option value="2">Moldavia</option>
+                  <option value="3">Germania</option>
+                </select>
+              </div>
+              <div class="col-2">
+                <p>CAP</p>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Username"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -96,21 +184,29 @@
           </div>
         </div>
       </aside>
-      <div class="app_content d-flex">
+      <div class="app_content overflow-hidden d-flex">
         <header
           class="header_left d-flex flex-column justify-content-between p-4"
         >
           <div class="d-flex flex-column text-white">
             <a class="nav-link pb-2" href="#"
-              ><i class="fa-solid fa-house"></i
-            ></a>
+              ><i class="fa-solid fa-house"></i>
+              <span class="d-none d-lg-inline-block">Home</span></a
+            >
             <a class="nav-link pb-2" href="#"
               ><i class="fa-solid fa-chart-simple"></i
-            ></a>
-            <a class="nav-link" href="#"><i class="fa-solid fa-signal"></i></a>
+              ><span class="d-none d-lg-inline-block ps-2">Stats</span></a
+            >
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-signal"></i>
+              <span class="d-none d-lg-inline-block">Signals</span></a
+            >
           </div>
-          <div>
-            <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i></a>
+          <div class="text-white">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-gear"></i>
+              <span class="d-none d-lg-inline-block">Settings</span></a
+            >
           </div>
         </header>
         <main class="main_content overflow-auto flex-grow-1 bg-lightgray">
@@ -160,132 +256,247 @@
               </div>
             </div>
           </section>
-          <section class="p-3">
-            <div class="next-classes">
-              <div class="card">
-                <h1 class="border p-2 bg-lightgray">Prossime Classi</h1>
-                <table class="table bg-light">
-                  <thead>
-                    <tr>
-                      <th class="flex-grow-1">Nome</th>
-                      <th class="d-none d-md-table-cell">Data Inizio</th>
-                      <th class="d-none d-md-table-cell">ROI</th>
-                      <th>Stato</th>
-                      <th>Azioni</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Classe 75</td>
-                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
-                      <td class="d-none d-md-table-cell">20%</td>
-                      <td>Done</td>
-                      <td>penna cestino</td>
-                    </tr>
-                    <tr>
-                      <td>Classe 75</td>
-                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
-                      <td class="d-none d-md-table-cell">20%</td>
-                      <td>Done</td>
-                      <td>penna cestino</td>
-                    </tr>
-                    <tr>
-                      <td>Classe 75</td>
-                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
-                      <td class="d-none d-md-table-cell">20%</td>
-                      <td>Done</td>
-                      <td>penna cestino</td>
-                    </tr>
-                    <tr>
-                      <td>Classe 75</td>
-                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
-                      <td class="d-none d-md-table-cell">20%</td>
-                      <td>Done</td>
-                      <td>penna cestino</td>
-                    </tr>
-                    <tr>
-                      <td>Classe 75</td>
-                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
-                      <td class="d-none d-md-table-cell">20%</td>
-                      <td>Done</td>
-                      <td>penna cestino</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <section class="p-3">
+                <div class="next-classes">
+                  <div class="card">
+                    <h1 class="border p-2 bg-lightgray">Prossime Classi</h1>
+                    <table class="table bg-light">
+                      <thead>
+                        <tr>
+                          <th class="w-50">Nome</th>
+                          <th class="d-none d-md-table-cell">Data Inizio</th>
+                          <th class="d-none d-md-table-cell">ROI</th>
+                          <th>Stato</th>
+                          <th>Azioni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <figure class="d-inline">
+                              <img src="./img/class-avatar.jpg" alt="" />
+                            </figure>
+                            <span>Classe 75</span>
+                          </td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>Done</td>
+                          <td>penna cestino</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <figure class="d-inline">
+                              <img src="./img/class-avatar.jpg" alt="" />
+                            </figure>
+                            <span>Classe 75</span>
+                          </td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>Done</td>
+                          <td>penna cestino</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <figure class="d-inline">
+                              <img src="./img/class-avatar.jpg" alt="" />
+                            </figure>
+                            <span>Classe 75</span>
+                          </td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>Done</td>
+                          <td>penna cestino</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <figure class="d-inline">
+                              <img src="./img/class-avatar.jpg" alt="" />
+                            </figure>
+                            <span>Classe 75</span>
+                          </td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>Done</td>
+                          <td>penna cestino</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <figure class="d-inline">
+                              <img src="./img/class-avatar.jpg" alt="" />
+                            </figure>
+                            <span>Classe 75</span>
+                          </td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>Done</td>
+                          <td>penna cestino</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+              <section class="p-3">
+                <div class="card">
+                  <h3 class="p-2 bg-lightgray">F.A.Q.</h3>
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                        >
+                          Come aggiungere un nuovo studente?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">text</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo"
+                        >
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">text</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree"
+                        >
+                          Posso usare questa dashboard da mobile?
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">text</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
-          </section>
-
-          <section class="p-3">
-            <div class="card">
-              <h3 class="p-2 bg-lightgray">F.A.Q.</h3>
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseOne"
-                    >
-                      Come aggiungere un nuovo studente?
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseOne"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">text</div>
+            <div class="col-lg-4">
+              <section class="p-3">
+                <div class="card">
+                  <h3 class="bg-lightgray p-2">TO DO</h3>
+                  <ul class="list-group p-3">
+                    <li class="list-group-item">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                        id="firstCheckbox"
+                      />
+                      <label class="form-check-label" for="firstCheckbox"
+                        >Kickoff nuove classi</label
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                        id="secondCheckbox"
+                      />
+                      <label class="form-check-label" for="secondCheckbox"
+                        >Lezione su Bootstrap 5 in classe #75</label
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                        id="thirdCheckbox"
+                      />
+                      <label class="form-check-label" for="thirdCheckbox"
+                        >Controllare username github studenti</label
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="p-3">
+                <div class="card" style="width: 30rem">
+                  <img src="./img/stats.jpeg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>
+                            <h5 class="card-title">Utenti attivi</h5>
+                            <p class="card-text">
+                              Lista degli utenti attivi in piattaforma nell'ultimo
+                              mese
+                            </p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Gennaio 1200</td>
+                        </tr>
+                        <tr>
+                          <td>Febbraio 800</td>
+                        </tr>
+                        <tr>
+                          <td>Marzo 1500</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p><a href="#">Visualizza report approfondito</a></p>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseTwo"
-                    >
-                      Come posso accedere alle informazioni del mio account?
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">text</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseThree"
-                    >
-                      Posso usare questa dashboard da mobile?
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseThree"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">text</div>
-                  </div>
-                </div>
-              </div>
+              </section>
             </div>
-          </section>
+          </div>
         </main>
       </div>
     </div>
