@@ -116,8 +116,8 @@
             <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i></a>
           </div>
         </header>
-        <main class="main_content overflow-auto flex-grow-1">
-          <section class="hero container-fluid bg-lightblue debug">
+        <main class="main_content overflow-auto flex-grow-1 bg-lightgray">
+          <section class="hero container-fluid bg-lightblue">
             <div class="row flex-column flex-md-row text-white">
               <div class="col order-0 order-md-2 p-4">
                 Nuovo Studente
@@ -134,27 +134,27 @@
               </div>
               <div class="col order-0 order-md-first p-4">
                 <h2 class="d-inline-block">Boolean</h2>
-                <span class="bg-blue rounded-circle p-1">Piano blaze</span>
+                <span class="bg-blue rounded p-1">Piano blaze</span>
                 <ul class="list-unstyled d-flex">
-                  <li class="px-2 bg-blue rounded-circle">3 app</li>
+                  <li class="px-2 bg-blue rounded">3 app</li>
                   <li class="d-flex">
                     <i
                       class="fa-solid fa-angles-right d-flex align-items-center px-2"
                     ></i>
                     <ul class="list-unstyled">
-                      <li class="d-lg-none px-2 bg-blue rounded-circle">+</li>
+                      <li class="d-lg-none px-2 bg-blue rounded">+</li>
                       <li
-                        class="d-none d-lg-inline-block px-2 bg-blue rounded-circle"
+                        class="d-none d-lg-inline-block px-2 bg-blue rounded"
                       >
                         Boolean mobile app
                       </li>
                       <li
-                        class="d-none d-lg-inline-block px-2 bg-blue rounded-circle"
+                        class="d-none d-lg-inline-block px-2 bg-blue rounded"
                       >
                         Boolean web app
                       </li>
                       <li
-                        class="d-none d-lg-inline-block px-2 bg-blue rounded-circle"
+                        class="d-none d-lg-inline-block px-2 bg-blue rounded"
                       >
                         Boolean blog app
                       </li>
@@ -168,11 +168,11 @@
               </div>
             </div>
           </section>
-          <section>
+          <section class="p-3">
             <div class="next-classes">
-              <div>
-                <h1>Prossime Classi</h1>
-                <table class="table">
+              <div class="card">
+                <h1 class="border p-2 bg-lightgray">Prossime Classi</h1>
+                <table class="table bg-light">
                   <thead>
                     <tr>
                       <th class="flex-grow-1">Nome</th>
@@ -224,46 +224,44 @@
             </div>
           </section>
 
-          <section>
-            <div>
-              <div>
-                <h1>F.A.Q.</h1>
-                <div class="accordion accordion-flush">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseOne"
-                      >
-                        Come aggiungere un nuovo studente?
-                      </button>
-                    </h2>
-                    <div
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        Clicca sul + in alto nella sezione blu
-                      </div>
-                    </div>
+          <section class="p-3">
+            <div class="card">
+              <h3 class="p-2 bg-lightgray">F.A.Q.</h3>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Come aggiungere un nuovo studente?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">text</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Come posso accedere alle informazioni del mio account?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">text</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Posso usare questa dashboard da mobile?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">text</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div>
-              <h1>TO DO</h1>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" />
-                <label class="form-check-label" for="flexCheckDefault">
-                  kickoff nuove classi
-                </label>
-              </div>
-            </div>
+            
           </section>
         </main>
       </div>

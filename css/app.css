@@ -4,6 +4,7 @@
   --lightblue: #1c71e8;
   --darkblue: #061E34;
   --blue: #165BBA;
+  --lightgray: #F8F9FA;
 }
 
 .text-orange {
@@ -16,6 +17,10 @@
 
 .bg-blue {
     background-color: var(--blue);
+}
+
+.bg-lightgray {
+  background-color: var(--lightgray);
 }
 
 .mobile-logo {
@@ -43,6 +48,7 @@
 .main_content {
   height: 100%;
 }
+
 
 /* RESPONSIVE */
 
