@@ -17,13 +17,41 @@
     <link rel="stylesheet" href="./css/app.css" />
   </head>
 
-  <body class="">
+  <body>
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p></p>
+      </div>
+    </div>
+
     <div class="app overflow-hidden">
       <aside class="aside_top container-fluid flex-shrink-0 py-2">
         <div class="row">
           <div class="col-2 d-flex justify-content-center">
-            <img class="mobile-logo d-lg-none" src="./img/mobile-logo.png" alt=""/>
-            <img class="d-none d-lg-inline-block" src="./img/logo.svg" alt="">
+            <img
+              class="mobile-logo d-lg-none"
+              src="./img/mobile-logo.png"
+              alt=""
+            />
+            <img class="d-none d-lg-inline-block" src="./img/logo.svg" alt="" />
           </div>
           <div class="col flex-grow-1 d-flex">
             <form class="d-flex flex-grow-1 input-group" role="search">
@@ -39,12 +67,18 @@
               />
             </form>
           </div>
-          <div class="col-2 d-flex justify-content-end align-items-center ">
-            <a class="nav-link text-secondary" href="#"><i class="fa-solid fa-list-ul d-none d-lg-inline-block px-2"></i></a>
-            <a class="nav-link text-secondary" href="#"><i
-              class="fa-solid fa-circle-question d-none d-lg-inline-block px-2"
-            ></i></a>
-            <a class="nav-link text-secondary" href="#"><i class="fa-solid fa-burger d-none d-lg-inline-block px-2"></i></a>
+          <div class="col-2 d-flex justify-content-end align-items-center">
+            <a class="nav-link text-secondary" href="#"
+              ><i class="fa-solid fa-list-ul d-none d-lg-inline-block px-2"></i
+            ></a>
+            <a class="nav-link text-secondary" href="#"
+              ><i
+                class="fa-solid fa-circle-question d-none d-lg-inline-block px-2"
+              ></i
+            ></a>
+            <a class="nav-link text-secondary" href="#"
+              ><i class="fa-solid fa-burger d-none d-lg-inline-block px-2"></i
+            ></a>
             <div class="dropdown d-flex">
               <a
                 class="btn"
@@ -65,14 +99,73 @@
           </div>
         </div>
       </aside>
-      <div class="app_content d-flex debug">
-        <header class="header_left">header</header>
+      <div class="app_content d-flex">
+        <header
+          class="header_left d-flex flex-column justify-content-between p-4"
+        >
+          <div class="d-flex flex-column text-white">
+            <a class="nav-link pb-2" href="#"
+              ><i class="fa-solid fa-house"></i
+            ></a>
+            <a class="nav-link pb-2" href="#"
+              ><i class="fa-solid fa-chart-simple"></i
+            ></a>
+            <a class="nav-link" href="#"><i class="fa-solid fa-signal"></i></a>
+          </div>
+          <div>
+            <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i></a>
+          </div>
+        </header>
         <main class="main_content overflow-auto flex-grow-1">
-          <section class="hero container-fluid">
-            <div class="row flex-column flex-md-row">
-              <div class="col order-md-2">Nuovo Studente</div>
-              <div class="col order-first">Boolean</div>
-              <div class="col">Studenti online negli ultimi 30 minuti</div>
+          <section class="hero container-fluid bg-lightblue debug">
+            <div class="row flex-column flex-md-row text-white">
+              <div class="col order-0 order-md-2 p-4">
+                Nuovo Studente
+
+                <button
+                  type="button"
+                  class="btn active"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                >
+                  +
+                </button>
+              </div>
+              <div class="col order-0 order-md-first p-4">
+                <h2 class="d-inline-block">Boolean</h2>
+                <span class="bg-blue rounded-circle p-1">Piano blaze</span>
+                <ul class="list-unstyled d-flex">
+                  <li class="px-2 bg-blue rounded-circle">3 app</li>
+                  <li class="d-flex">
+                    <i
+                      class="fa-solid fa-angles-right d-flex align-items-center px-2"
+                    ></i>
+                    <ul class="list-unstyled">
+                      <li class="d-lg-none px-2 bg-blue rounded-circle">+</li>
+                      <li
+                        class="d-none d-lg-inline-block px-2 bg-blue rounded-circle"
+                      >
+                        Boolean mobile app
+                      </li>
+                      <li
+                        class="d-none d-lg-inline-block px-2 bg-blue rounded-circle"
+                      >
+                        Boolean web app
+                      </li>
+                      <li
+                        class="d-none d-lg-inline-block px-2 bg-blue rounded-circle"
+                      >
+                        Boolean blog app
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col p-4">
+                <p>Studenti online negli ultimi 30 minuti</p>
+                <p class="fs-2">125</p>
+              </div>
             </div>
           </section>
           <section>

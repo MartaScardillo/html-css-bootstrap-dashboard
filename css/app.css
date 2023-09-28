@@ -2,10 +2,20 @@
 
 :root {
   --lightblue: #1c71e8;
+  --darkblue: #061E34;
+  --blue: #165BBA;
 }
 
 .text-orange {
     color: orange;
+}
+
+.bg-lightblue {
+    background-color: var(--lightblue);
+}
+
+.bg-blue {
+    background-color: var(--blue);
 }
 
 .mobile-logo {
@@ -22,6 +32,12 @@
 
 .app_content {
   height: 100%;
+}
+
+.header_left {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--darkblue);
+    height: 100%;
 }
 
 .main_content {
@@ -61,7 +77,7 @@
 }
 .debug .header_left {
   border: 1px chartreuse solid;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .debug .main_content {
   border: 1px darkmagenta solid;
