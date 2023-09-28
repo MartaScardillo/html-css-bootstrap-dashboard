@@ -36,7 +36,7 @@
 }
 
 .app_content {
-  height: 100%;
+  flex-grow: 1;
 }
 
 .header_left {
@@ -47,6 +47,10 @@
 
 .main_content {
   height: 100%;
+}
+
+.text-small {
+  font-size: 12px;
 }
 
 
